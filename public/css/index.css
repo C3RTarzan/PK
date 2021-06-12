@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  outline: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -89,6 +90,12 @@ section {
   align-items: center;
   flex-direction: column;
 }
+section input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #2f3136 inset;
+}
+section input:-webkit-autofill {
+  -webkit-text-fill-color: #d6d7d9 !important;
+}
 section .primary {
   width: 80%;
   height: min-content;
@@ -99,7 +106,7 @@ section .primary {
   padding: 30px 0;
 }
 section .primary .title {
-  padding-bottom: 20px;
+  padding: 0 20px 20px 20px;
   text-align: center;
 }
 section .primary .title span {
@@ -135,12 +142,151 @@ section .secundary {
   background-color: #36393f;
   padding: 30px 0;
 }
+section .secundary .login {
+  display: block;
+  width: 30%;
+}
+section .secundary .login .login-title {
+  user-select: none;
+  margin-bottom: 10px;
+}
+section .secundary .login .login-title span {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #d6d7d9;
+}
+section .secundary .login form .input {
+  display: flex;
+  flex-direction: column;
+}
+section .secundary .login form .input input {
+  font-size: 16px;
+  height: 25px;
+  margin-bottom: 8px;
+  padding: 5px;
+  background-color: #2f3136;
+  color: #d6d7d9;
+  opacity: 0.8;
+  border: none;
+}
+section .secundary .login form .button {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+section .secundary .login form .button .button-register {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 40px;
+}
+section .secundary .login form .button .button-register span {
+  color: #d6d7d9;
+  opacity: 0.9;
+  cursor: pointer;
+}
+section .secundary .login form .button .button-login {
+  user-select: none;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .secundary .login form .button .button-login button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  color: #DEE7FD;
+  width: 80px;
+  height: 25px;
+  background-color: #5865f2;
+}
+section .secundary .login form .button .button-login button:hover {
+  background-color: #5865f2;
+  opacity: 0.9;
+}
+section .secundary .register {
+  display: none;
+  width: 30%;
+}
+section .secundary .register .register-title {
+  user-select: none;
+  margin-bottom: 10px;
+}
+section .secundary .register .register-title span {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #d6d7d9;
+}
+section .secundary .register form .input {
+  display: flex;
+  flex-direction: column;
+}
+section .secundary .register form .input input {
+  font-size: 16px;
+  height: 25px;
+  margin-bottom: 8px;
+  padding: 5px;
+  background-color: #2f3136;
+  color: #d6d7d9;
+  opacity: 0.8;
+  border: none;
+}
+section .secundary .register form .button {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+section .secundary .register form .button .button-login {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 40px;
+}
+section .secundary .register form .button .button-login span {
+  color: #d6d7d9;
+  opacity: 0.9;
+  cursor: pointer;
+}
+section .secundary .register form .button .button-register {
+  user-select: none;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .secundary .register form .button .button-register button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  color: #DEE7FD;
+  width: 80px;
+  height: 25px;
+  background-color: #5865f2;
+}
+section .secundary .register form .button .button-register button:hover {
+  background-color: #5865f2;
+  opacity: 0.9;
+}
+
 .footer {
   position: relative;
   z-index: 5;
   width: 100%;
   height: 50px;
   background-color: #2f3136;
+}
+
+@media (max-width: 768px) {
+  section .secundary .login {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
