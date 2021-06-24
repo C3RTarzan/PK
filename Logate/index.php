@@ -1,48 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="bt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/index/logate.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <title>PinkUppers</title>
+    <title>Logate</title>
 </head>
+
 <body>
-    <header>
-        <div class="header">
-            <div class="logo">
-                <div class="img">
-                    <img src="/public/img/logo.png" alt="">
-                </div>
-            </div>
-            <div class="text">
-                
-            </div>
-            <div class="nav">
-                <div class="options">
-                    <span class="iconify" data-icon="codicon:account" data-inline="false"></span>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php
+        include "../view/header.php";
+    ?>
     <section>
-        <div class="primary">
-            <div class="title">
-                <span>Seja Bem-Vindo ao PinkUppers</span>
-            </div>
-            <div class="info">
-                <span>
-                    PinkUppers se trata de um simulador de HACKER, 
-                    onde você um hacker e invadira pessoas empresas e até outros hackers. 
-                    mas fique atento pois você também poderá se torar um alvo!!!
-                </span>
-            </div>
-            <div class="img">
-                <img src="/public/img/index-1.jpg" alt="">
-            </div>
-        </div>
-        <div class="secundary">
+        <div class="logate">
             <div class="login">
                 <div class="login-title">
                     <span>Logar</span>
@@ -64,7 +37,7 @@
             </div>
             <div class="register">
                 <div class="register-title">
-                    <span>Registro</span>
+                    <span>Registrar</span>
                 </div>
                 <form action="" method="post">
                     <div class="input">
@@ -85,12 +58,9 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="footer">
-
-            
-        </div>
-    </footer>
+    <?php
+        include "../view/footer.php";
+    ?>
 </body>
 <script src="/public/js/index.js"></script>
 </html>

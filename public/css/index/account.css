@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 100px;
+  background-color: #2f3136;
+  user-select: none;
+}
+header .header {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+header .header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .logo .img {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+header .header .logo .img:hover {
+  transform: scale(1.05);
+}
+header .header .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .text .title {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .text .title span {
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 0 0 3px white;
+}
+header .header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .nav .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+}
+header .header .nav .options .iconify {
+  width: 40px;
+  height: 40px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+header .header .nav .options .iconify:hover {
+  color: gainsboro;
+  width: 41px;
+  height: 41px;
+}
+
+.footer {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 800px;
+  background-color: #2f3136;
+}
+
+section {
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  min-height: calc(100% - 150px);
+  background-color: #292b2f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+section .section-background {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+section .section-background .header-sec {
+  background-color: #36393f;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section .section-background .header-sec .photo-background {
+  width: 80%;
+  height: 150px;
+  background-color: #2f3136;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+section .section-background .header-sec .photo-background .photo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section .section-background .header-sec .photo-background .photo .form-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  user-select: none;
+}
+section .section-background .header-sec .photo-background .photo .form-photo img {
+  width: 100%;
+  height: 100%;
+}
+section .section-background .header-sec .photo-background .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+section .section-background .header-sec .photo-background .name span {
+  color: #d6d7d9;
+  font-size: 20px;
+}
+section .section-background .header-sec .info-background {
+  width: 80%;
+  padding: 0 15px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #2f3136;
+}
+section .section-background .header-sec .info-background span {
+  color: #d6d7d9;
+  opacity: 0.9;
+}
+section .section-background .header-sec .info-background .item-name {
+  border-left: solid 5px #5865f2;
+  border-right: solid 2.5px #5865f2;
+  width: 50%;
+}
+section .section-background .header-sec .info-background .item-name .name-primary {
+  display: flex;
+  align-items: center;
+  background-color: #36393f;
+  height: 25px;
+  padding-left: 10px;
+}
+section .section-background .header-sec .info-background .item-name .name-secondary {
+  display: flex;
+  align-items: center;
+  background-color: #292b2f;
+  height: 25px;
+  padding-left: 10px;
+}
+section .section-background .header-sec .info-background .item-value {
+  border-left: solid 2.5px #5865f2;
+  border-right: solid 5px #5865f2;
+  width: 50%;
+}
+section .section-background .header-sec .info-background .item-value .value-primary {
+  display: flex;
+  align-items: center;
+  background-color: #36393f;
+  height: 25px;
+  padding-left: 10px;
+}
+section .section-background .header-sec .info-background .item-value .value-secondary {
+  display: flex;
+  align-items: center;
+  background-color: #292b2f;
+  height: 25px;
+  padding-left: 10px;
+}
+section .section-background .section-sec {
+  background-color: #36393f;
+  width: 100%;
+  height: calc(100% - 80px);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section .section-background .section-sec .VPS {
+  position: relative;
+  z-index: initial;
+  margin: 10px 0;
+  width: 80%;
+  height: 80px;
+  background-color: #2f3136;
+  border-left: solid 4px #3ba55c;
+  display: grid;
+  grid-template-columns: 10% 10% 30% 30% 20%;
+}
+section .section-background .section-sec .VPS div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section .section-background .section-sec .VPS .iccon .iconify {
+  font-size: 25px;
+  color: #3ba55c;
+}
+section .section-background .section-sec .VPS .info .info-title {
+  color: #d6d7d9;
+  opacity: 0.8;
+}
+section .section-background .section-sec .VPS .info .info-state {
+  color: #292b2f;
+  padding: 3px 8px;
+  background-color: #3ba55c;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+section .section-background .section-sec .VPS .date .date-title {
+  color: #d6d7d9;
+  opacity: 0.7;
+}
+section .section-background .section-sec .VPS .date .date-info {
+  color: #d6d7d9;
+  opacity: 0.9;
+}
+section .section-background .section-sec .VPS .IP span {
+  border: solid 1px #3ba55c;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #d6d7d9;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+section .section-background .section-sec .VPS .IP span:hover {
+  color: #36393f;
+  background-color: #3ba55c;
+}
+section .section-background .section-sec .VPS .gerency span {
+  cursor: pointer;
+  user-select: none;
+  color: #5865f2;
+}
+section .section-background .section-sec .VPS .gerency span:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+section .section-background .section-sec .VPS .IP-gerency {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  top: 80px;
+  background-color: #292b2f;
+  display: none;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+section .section-background .section-sec .VPS .IP-gerency .ip-number span {
+  color: #d6d7d9;
+  opacity: 0.8;
+}
+section .section-background .section-sec .VPS .IP-gerency .ip-price {
+  color: #3ba55c;
+  opacity: 0.8;
+}
+section .section-background .section-sec .VPS .IP-gerency .ip-time {
+  color: #d6d7d9;
+  opacity: 0.8;
+}
+section .section-background .section-sec .VPS .IP-gerency .ip-trocarte {
+  color: #5865f2;
+  cursor: pointer;
+  user-select: none;
+}
+section .section-background .section-sec .VPS .IP-gerency .ip-trocarte:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+section .section-background .section-sec .padding {
+  margin: 10px 0 70px 0;
+}
+
+/*# sourceMappingURL=account.css.map */

@@ -90,12 +90,6 @@ section {
   align-items: center;
   flex-direction: column;
 }
-section input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px #2f3136 inset;
-}
-section input:-webkit-autofill {
-  -webkit-text-fill-color: #d6d7d9 !important;
-}
 section .primary {
   width: 80%;
   height: min-content;
@@ -132,6 +126,11 @@ section .primary .img {
 section .primary .img img {
   width: 100%;
 }
+section .primary .user-account {
+  width: 80%;
+  height: 200px;
+  background-color: #292b2f;
+}
 section .secundary {
   margin-top: 20px;
   width: 80%;
@@ -142,151 +141,186 @@ section .secundary {
   background-color: #36393f;
   padding: 30px 0;
 }
-section .secundary .login {
-  display: block;
-  width: 30%;
+section .secundary .server {
+  width: 80%;
+  height: 80px;
+  background-color: #292b2f;
+  border-left: solid 5px #3ba55c;
+  display: grid;
+  grid-template-columns: 10% 20% 20% 30% 20%;
 }
-section .secundary .login .login-title {
-  user-select: none;
-  margin-bottom: 10px;
+section .secundary .server .icon {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
-section .secundary .login .login-title span {
-  font-size: 20px;
-  font-weight: bolder;
-  color: #d6d7d9;
+section .secundary .server .icon .iconify {
+  font-size: 30px;
+  color: #3ba55c;
 }
-section .secundary .login form .input {
+section .secundary .server .record {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-section .secundary .login form .input input {
-  font-size: 16px;
-  height: 25px;
-  margin-bottom: 8px;
-  padding: 5px;
-  background-color: #2f3136;
+section .secundary .server .record .record-host span {
   color: #d6d7d9;
-  opacity: 0.8;
-  border: none;
 }
-section .secundary .login form .button {
-  display: flex;
-  justify-content: center;
-  padding: 0 10px;
+section .secundary .server .record .record-state {
+  margin-top: 5px;
+  padding: 2px 5px;
+  background-color: #3ba55c;
+  width: min-content;
+  border-radius: 5px;
 }
-section .secundary .login form .button .button-register {
-  user-select: none;
+section .secundary .server .record .record-state span {
+  font-size: 14px;
+  color: #292b2f;
+}
+section .secundary .server .date {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 40px;
-}
-section .secundary .login form .button .button-register span {
-  color: #d6d7d9;
-  opacity: 0.9;
-  cursor: pointer;
-}
-section .secundary .login form .button .button-login {
-  user-select: none;
-  width: 50%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section .secundary .login form .button .button-login button {
-  cursor: pointer;
-  border: none;
-  border-radius: 3px;
-  color: #DEE7FD;
-  width: 80px;
-  height: 25px;
-  background-color: #5865f2;
-}
-section .secundary .login form .button .button-login button:hover {
-  background-color: #5865f2;
-  opacity: 0.9;
-}
-section .secundary .register {
-  display: none;
-  width: 30%;
-}
-section .secundary .register .register-title {
-  user-select: none;
-  margin-bottom: 10px;
-}
-section .secundary .register .register-title span {
-  font-size: 20px;
-  font-weight: bolder;
-  color: #d6d7d9;
-}
-section .secundary .register form .input {
-  display: flex;
   flex-direction: column;
 }
-section .secundary .register form .input input {
-  font-size: 16px;
-  height: 25px;
-  margin-bottom: 8px;
-  padding: 5px;
-  background-color: #2f3136;
+section .secundary .server .date span {
   color: #d6d7d9;
+}
+section .secundary .server .date .date-title {
+  margin-bottom: 5px;
+}
+section .secundary .server .date .date-title span {
+  opacity: 0.5;
+}
+section .secundary .server .date .date-validity span {
+  opacity: 0.9;
+}
+section .secundary .server .DNS {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .secundary .server .DNS span {
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: solid 1px #3ba55c;
+  color: #d6d7d9;
+  opacity: 0.9;
+}
+section .secundary .server .DNS span:hover {
+  color: #292b2f;
+  background-color: #3ba55c;
+}
+section .secundary .server .manage {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .secundary .server .manage span {
+  color: #5865f2;
+  font-size: 18px;
+  cursor: pointer;
+}
+section .secundary .server .manage span:hover {
+  text-decoration: underline;
   opacity: 0.8;
-  border: none;
 }
-section .secundary .register form .button {
-  display: flex;
-  justify-content: center;
-  padding: 0 10px;
-}
-section .secundary .register form .button .button-login {
-  user-select: none;
+section .secundary .DNS-gerency {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 40px;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
-section .secundary .register form .button .button-login span {
+section .secundary .DNS-gerency .DNS-header {
+  width: 80%;
+  height: 30px;
+  background-color: #292b2f;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  opacity: 0.5;
+}
+section .secundary .DNS-gerency .DNS-header .iconify {
+  cursor: pointer;
+  color: #d6d7d9;
+  font-size: 30px;
+}
+section .secundary .DNS-gerency .DNS-header .iconify:hover {
+  font-size: 32px;
+}
+section .secundary .DNS-gerency .DNS-info {
+  width: 80%;
+  height: 80px;
+  background-color: #292b2f;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+section .secundary .DNS-gerency .DNS-info .DNS-ip {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .secundary .DNS-gerency .DNS-info .DNS-ip .ip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  background-color: #2f3136;
+  height: 60%;
+  width: 80%;
+}
+section .secundary .DNS-gerency .DNS-info .DNS-ip .ip-container span {
   color: #d6d7d9;
   opacity: 0.9;
-  cursor: pointer;
 }
-section .secundary .register form .button .button-register {
-  user-select: none;
-  width: 50%;
-  height: 40px;
+section .secundary .DNS-gerency .DNS-info .DNS-price {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .secundary .register form .button .button-register button {
-  cursor: pointer;
-  border: none;
-  border-radius: 3px;
-  color: #DEE7FD;
-  width: 80px;
-  height: 25px;
-  background-color: #5865f2;
-}
-section .secundary .register form .button .button-register button:hover {
-  background-color: #5865f2;
+section .secundary .DNS-gerency .DNS-info .DNS-price span {
+  color: #d6d7d9;
   opacity: 0.9;
+}
+section .secundary .DNS-gerency .DNS-info .DNS-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .secundary .DNS-gerency .DNS-info .DNS-time span {
+  color: #d6d7d9;
+  opacity: 0.9;
+}
+section .secundary .DNS-gerency .DNS-info .DNS-edit {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .secundary .DNS-gerency .DNS-info .DNS-edit span {
+  cursor: pointer;
+  color: #5865f2;
+}
+section .secundary .DNS-gerency .DNS-info .DNS-edit span:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .footer {
   position: relative;
   z-index: 5;
   width: 100%;
-  height: 50px;
+  height: 800px;
   background-color: #2f3136;
-}
-
-@media (max-width: 768px) {
-  section .secundary .login {
-    width: 60%;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
